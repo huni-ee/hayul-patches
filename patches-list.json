@@ -1,5 +1,153 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "0.0.0",
-  "patches": []
+  "version": "1.0.0-dev.1",
+  "patches": [
+    {
+      "name": "Hayul 실행 코드 적용",
+      "description": "앱이 자기 서명을 확인하면 재서명된 서명 대신 원본 서명을 돌려주는 Hayul 실행 코드를 넣습니다.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.kakao.talk",
+          "name": "KakaoTalk",
+          "description": "카카오톡 26.10.1 설치본 또는 APKMirror 파일을 사용합니다.",
+          "apkFileType": "APKM",
+          "appIconColor": "#FEE500",
+          "signatures": [
+            "2b06cc3d47782d7c497c07f17cb5f859cd6bbcb66829f3e67b96b7a44820d2ce"
+          ],
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.10.1",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": null
+            }
+          ]
+        },
+        {
+          "packageName": "com.termux",
+          "name": "Termux",
+          "description": "Termux googleplay.2026.10.09 설치본 또는 APKMirror 파일을 사용합니다.",
+          "apkFileType": "APKM",
+          "appIconColor": null,
+          "signatures": [
+            "738f0a30a04d3c8a1be304af18d0779bcf3ea88fb60808f657a3521861c2ebf9"
+          ],
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "googleplay.2026.10.09",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": 30,
+              "description": "Android 14 가상기기에서 Play판 공개 소스 빌드로 검증했습니다."
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "앱 UID 공유",
+      "description": "카카오톡과 Termux가 같은 sharedUserId로 실행되어 서로의 앱 데이터에 접근할 수 있게 합니다. 두 앱은 같은 키로 서명해야 합니다.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.kakao.talk",
+          "name": "KakaoTalk",
+          "description": "카카오톡 26.10.1 설치본 또는 APKMirror 파일을 사용합니다.",
+          "apkFileType": "APKM",
+          "appIconColor": "#FEE500",
+          "signatures": [
+            "2b06cc3d47782d7c497c07f17cb5f859cd6bbcb66829f3e67b96b7a44820d2ce"
+          ],
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.10.1",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": null
+            }
+          ]
+        },
+        {
+          "packageName": "com.termux",
+          "name": "Termux",
+          "description": "Termux googleplay.2026.10.09 설치본 또는 APKMirror 파일을 사용합니다.",
+          "apkFileType": "APKM",
+          "appIconColor": null,
+          "signatures": [
+            "738f0a30a04d3c8a1be304af18d0779bcf3ea88fb60808f657a3521861c2ebf9"
+          ],
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "googleplay.2026.10.09",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": 30,
+              "description": "Android 14 가상기기에서 Play판 공개 소스 빌드로 검증했습니다."
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "원본 서명 유지",
+      "description": "Hayul 실행 코드가 앱에 돌려줄 원본 서명 인증서를 APK 안에 저장합니다.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.kakao.talk",
+          "name": "KakaoTalk",
+          "description": "카카오톡 26.10.1 설치본 또는 APKMirror 파일을 사용합니다.",
+          "apkFileType": "APKM",
+          "appIconColor": "#FEE500",
+          "signatures": [
+            "2b06cc3d47782d7c497c07f17cb5f859cd6bbcb66829f3e67b96b7a44820d2ce"
+          ],
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "26.10.1",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": 29,
+              "description": null
+            }
+          ]
+        },
+        {
+          "packageName": "com.termux",
+          "name": "Termux",
+          "description": "Termux googleplay.2026.10.09 설치본 또는 APKMirror 파일을 사용합니다.",
+          "apkFileType": "APKM",
+          "appIconColor": null,
+          "signatures": [
+            "738f0a30a04d3c8a1be304af18d0779bcf3ea88fb60808f657a3521861c2ebf9"
+          ],
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "googleplay.2026.10.09",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": 30,
+              "description": "Android 14 가상기기에서 Play판 공개 소스 빌드로 검증했습니다."
+            }
+          ]
+        }
+      ],
+      "options": []
+    }
+  ]
 }
