@@ -10,9 +10,12 @@
 ## 패치 목록
 
 <!-- PATCHES_START EXPANDED -->
+> **[v1.0.0-dev.2](https://github.com/huni-ee/hayul-patches/releases/tag/v1.0.0-dev.2)**&nbsp;&nbsp;&middot;&nbsp;&nbsp;`dev`&nbsp;&nbsp;&middot;&nbsp;&nbsp;**3 patches** across **2 apps**&nbsp;&nbsp;&middot;&nbsp;&nbsp;[Full details](PATCHES.md)
 
-첫 릴리스에서 카카오톡과 Termux의 패치 목록이 자동 생성됩니다.
-
+| # | App | Patches | Version | Package |
+|---|---|---|---|---|
+| 1 | [**KakaoTalk**](PATCHES.md#kakaotalk-comkakaotalk) | 3 | `26.10.1` | [`com.kakao.talk`](https://play.google.com/store/apps/details?id=com.kakao.talk) |
+| 2 | [**Termux**](PATCHES.md#termux-comtermux) | 3 | `googleplay.2026.10.09` | [`com.termux`](https://play.google.com/store/apps/details?id=com.termux) |
 <!-- PATCHES_END -->
 
 ## 원본과 다른 점
