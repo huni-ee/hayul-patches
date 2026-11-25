@@ -14,7 +14,7 @@ group = "dev.huniee.hayul"
 
 patches {
     about {
-        name = "Hayul"
+        name = "Hayul Patches"
         description = "카카오톡과 Termux에 sharedUserId 설정과 서명 체크 우회를 적용합니다."
         source = "git@github.com:huni-ee/hayul-patches.git"
         author = "huni-ee"
